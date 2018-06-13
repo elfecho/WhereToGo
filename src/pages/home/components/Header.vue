@@ -1,14 +1,14 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <div class="iconfont icon-fanhui "></div>
+      <div class="iconfont icon-fanhui"></div>
     </div>
     <div class="header-input">
       <span class="iconfont icon-suosou"></span>
       输入城市/景点/主题
     </div>
     <div class="header-right">
-      城市
+      {{this.city}}
       <span class="iconfont icon-jiantou"></span>
     </div>
   </div>
@@ -16,7 +16,10 @@
 
 <script>
   export default {
-    name: "HomeHeader"
+    name: "HomeHeader",
+    props: {
+      city: String
+    }
   }
 </script>
 
