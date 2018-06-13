@@ -2,7 +2,7 @@
   <div class="recommend">
     <div class="title">热门推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl" />
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,25 +17,11 @@
 <script>
   export default {
     name: "HomeRecommend",
+    props: {
+      list: Array
+    },
     data () {
-      return {
-        recommendList: [{
-          id: '001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-          title: '北京野生动物园',
-          desc: '位于大兴区榆垡镇万亩森林之中，北京大兴野生动物园集动物保护、野生动物驯养繁殖及科普教育为一体的大型自然生态公园。'
-        },{
-          id: '002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-          title: '北京野生动物园',
-          desc: '位于大兴区榆垡镇万亩森林之中，北京大兴野生动物园集动物保护、野生动物驯养繁殖及科普教育为一体的大型自然生态公园。'
-        },{
-          id: '003',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-          title: '北京野生动物园',
-          desc: '位于大兴区榆垡镇万亩森林之中，北京大兴野生动物园集动物保护、野生动物驯养繁殖及科普教育为一体的大型自然生态公园。'
-        }]
-      }
+      return {}
     }
   }
 </script>
