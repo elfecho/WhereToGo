@@ -7,10 +7,13 @@
       <span class="iconfont icon-suosou"></span>
       输入城市/景点/主题
     </div>
-    <div class="header-right">
-      {{this.city}}
-      <span class="iconfont icon-jiantou"></span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        {{this.city}}
+        <span class="iconfont icon-jiantou"></span>
+      </div>
+    </router-link>
+
   </div>
 </template>
 
@@ -49,4 +52,5 @@
       width: 1.24rem
       float: right
       text-align: center
+      color: #fff
 </style>
