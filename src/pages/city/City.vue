@@ -2,7 +2,7 @@
   <div class="city">
     <city-header></city-header>
     <city-search :cities="cities"></city-search>
-    <city-list :cities="cities" :hot="hotCities" @change="handleAlphaChange" :alpha="alpha"></city-list>
+    <city-list :cities="cities" :hot="hotCities" :alpha="alpha" @change="handleAlphaChange"></city-list>
   </div>
 </template>
 
@@ -44,7 +44,7 @@
         // console.log(this.alpha+'city')
       }
     },
-    mounted() {
+    mounted () {
       this.getCityInfo()
     }
   }
