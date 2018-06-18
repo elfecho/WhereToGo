@@ -3,7 +3,7 @@
     <div class="wrapper">
       <swiper :options="swiperOptions">
         <swiper-slide v-for="(item, index) in imgs" :key="index">
-          <img class="gallary-img" :src="item" />
+          <img class="gallary-img" :src="item"/>
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
@@ -17,12 +17,12 @@
     props: {
       imgs: {
         type: Array,
-        default () {
+        default() {
           return []
         }
       }
     },
-    data () {
+    data() {
       return {
         swiperOptions: {
           pagination: '.swiper-pagination',
@@ -33,7 +33,7 @@
       }
     },
     methods: {
-      handleGallaryClick () {
+      handleGallaryClick() {
         this.$emit('close')
       }
     }
@@ -43,6 +43,7 @@
 <style lang="stylus" scoped>
   .container >>> .swiper-container
     overflow: inherit
+
   .container
     display: flex
     flex-direction: column

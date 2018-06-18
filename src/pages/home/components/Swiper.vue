@@ -6,33 +6,33 @@
         <img class="swiper-img" :src="item.imgUrl">
       </swiper-slide>
       <!-- Optional controls -->
-      <div class="swiper-pagination"  slot="pagination"></div>
+      <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </div>
 </template>
 
 <script>
-export default {
-  name: "HomeSwiper",
-  props: {
-    list: Array
-  },
-  data () {
-    return {
-      swiperOption: {
-        pagination: '.swiper-pagination',
-        autoplay: true,
-        speed: 2000,
-        loop: true
+  export default {
+    name: "HomeSwiper",
+    props: {
+      list: Array
+    },
+    data() {
+      return {
+        swiperOption: {
+          pagination: '.swiper-pagination',
+          autoplay: true,
+          speed: 2000,
+          loop: true
+        }
+      }
+    },
+    computed: {
+      showSwiper() {
+        return this.list.length
       }
     }
-  },
-  computed: {
-    showSwiper () {
-      return this.list.length
-    }
   }
-}
 </script>
 
 <style lang="stylus" scoped>

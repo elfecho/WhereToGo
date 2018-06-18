@@ -1,0 +1,88 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "故宫(AAAAA景区)",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg",
+    "gallaryImgs": [
+      "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_350x240_8e61302a.jpg",
+      "http://img1.qunarzz.com/sight/p55/201211/04/fbcab3e5d6479ce893835fbb.jpg_350x240_df8ba9f7.jpg",
+      "http://img1.qunarzz.com/wugc/p180/201306/16/7f08e81624346b1693835fbb.jpg_350x240_b09a9503.jpg",
+      "http://img1.qunarzz.com/wugc/p123/201211/19/a2045d091f02b25493835fbb.png_350x240_cf4cd08e.png",
+      "http://img1.qunarzz.com/sight/p0/1410/e3/73da8d3e19cdc41c1932d4fcd22ec792.water.jpg_350x240_af846382.jpg",
+      "http://img1.qunarzz.com/sight/p0/1410/34/f540a04367d06820af4dfeaf0ad40257.water.jpg_350x240_100fac79.jpg",
+      "http://img1.qunarzz.com/sight/p0/1410/9d/fe8109ab5df1c9c324e74284fa802e72.water.jpg_350x240_8571d9ed.jpg",
+      "http://img1.qunarzz.com/wugc/p238/201306/16/d9090c728fed64eb93835fbb.jpg_350x240_afe6c0fa.jpg"
+    ],
+    "tickets": [
+      {
+        "title": "当日票",
+        "children": [
+          {
+            "title": "【当日票】成人票",
+            "children": [
+              {
+                "title": "免预约电子票，当天可定1"
+              },
+              {
+                "title": "免预约电子票，当天可定2"
+              },
+              {
+                "title": "免预约电子票，当天可定3"
+              },
+              {
+                "title": "免预约电子票，当天可定4"
+              },
+              {
+                "title": "免预约电子票，当天可定5"
+              },
+              {
+                "title": "免预约电子票，当天可定6"
+              },
+              {
+                "title": "免预约电子票，当天可定7"
+              }
+            ]
+          },
+          {
+            "title": "【当日票】学生票"
+          },
+          {
+            "title": "【当日票】老人票"
+          }
+        ]
+      },
+      {
+        "title": "学生票"
+      },
+      {
+        "title": "儿童票"
+      },
+      {
+        "title": "特惠票",
+        "children": [
+          {
+            "title": "免预约电子票，当天可定1"
+          },
+          {
+            "title": "免预约电子票，当天可定2"
+          },
+          {
+            "title": "免预约电子票，当天可定3"
+          },
+          {
+            "title": "免预约电子票，当天可定4"
+          },
+          {
+            "title": "免预约电子票，当天可定5"
+          },
+          {
+            "title": "免预约电子票，当天可定6"
+          },
+          {
+            "title": "免预约电子票，当天可定7"
+          }
+        ]
+      }
+    ]
+  }
+}
