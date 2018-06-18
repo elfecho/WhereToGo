@@ -15,7 +15,7 @@
 <script>
   export default {
     name: 'DetailHeader',
-    data () {
+    data() {
       return {
         showAbs: true,
         opacityStyle: {
@@ -24,31 +24,31 @@
       }
     },
     methods: {
-      handleScroll () {
+      handleScroll() {
         const top = document.documentElement.scrollTop
         if (top > 60) {
           let opacity = top / 140
           opacity = opacity > 1 ? 1 : opacity
-          this.opacityStyle = { opacity }
+          this.opacityStyle = {opacity}
           this.showAbs = false
         } else {
           this.showAbs = true
         }
       }
     },
-    activated () {
-      window.addEventListener('scroll', this.handleScroll)
-    },
-    // window绑定的是全局对象，进入其他组件时刷新以节省性能
-    unactived () {
-      window.removeEventListener('scroll', this.handleScroll)
-    }
-    // mounted () {
+    // activated() {
     //   window.addEventListener('scroll', this.handleScroll)
     // },
-    // unmounted () {
+    // // window绑定的是全局对象，进入其他组件时刷新以节省性能
+    // unactived() {
     //   window.removeEventListener('scroll', this.handleScroll)
     // }
+    mounted () {
+      window.addEventListener('scroll', this.handleScroll)
+    },
+    unmounted () {
+      window.removeEventListener('scroll', this.handleScroll)
+    }
   }
 </script>
 
