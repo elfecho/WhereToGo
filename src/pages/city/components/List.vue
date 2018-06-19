@@ -26,7 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="area" v-for="(item, key) of cities" :key="key" :ref="key" >
+      <div class="area" v-for="(item, key) of cities" :key="key" :ref="key">
         <div class="title border-topbottom">{{key}}</div>
         <div class="item-list" v-for="innerItem of item" :key="innerItem.id" @click="handleCityClick(innerItem.name)">
           <div class="item border-bottom">{{innerItem.name}}</div>
@@ -38,13 +38,13 @@
 
 <script>
   import BScroll from 'better-scroll'
-  import { mapState, mapMutations } from 'vuex'
+  import {mapState, mapMutations} from 'vuex'
+
   export default {
     name: "CityList",
     props: {
       hot: Array,
-      cities: Object,
-      alpha: String
+      cities: Object
     },
     computed: {
       ...mapState({
@@ -52,29 +52,22 @@
       })
     },
     methods: {
-      handleCityClick (city) {
+      handleCityClick(city) {
         // this.$store.commit('changeCity',city)
         this.changeCity(city)
         this.$router.push('/')
       },
-      handleAlphaClick (e) {
-        this.$emit('change', e.target.innerText)
+      handleAlphaClick(e) {
         // console.log(e.target.innerText)
+        let alpha = e.target.innerText
+        // 跳转所选字母的列表
+        // console.log(this.$refs[alpha])
+        const element = this.$refs[alpha][0]
+        this.scroll.scrollToElement(element)
       },
       ...mapMutations(['changeCity'])
     },
-    watch: {
-      alpha () {
-        // console.log(this.alpha)
-        if (this.alpha) {
-          // 跳转所选字母的列表
-          // console.log(this.$refs[this.alpha])
-          const element = this.$refs[this.alpha][0]
-          this.scroll.scrollToElement(element)
-        }
-      }
-    },
-    mounted () {
+    mounted() {
       this.scroll = new BScroll(this.$refs.wrapper)
     }
   }

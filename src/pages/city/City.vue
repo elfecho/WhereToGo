@@ -2,7 +2,7 @@
   <div class="city">
     <city-header></city-header>
     <city-search :cities="cities"></city-search>
-    <city-list :cities="cities" :hot="hotCities" :alpha="alpha" @change="handleAlphaChange"></city-list>
+    <city-list :cities="cities" :hot="hotCities"></city-list>
   </div>
 </template>
 
@@ -22,8 +22,7 @@
     data() {
       return {
         cities: {},
-        hotCities: [],
-        alpha: ''
+        hotCities: []
       }
     },
     methods: {
@@ -33,18 +32,15 @@
       },
       handleGetCityInfoSuccessfully(res) {
         res = res.data
+        console.log(res)
         if (res.ret && res.data) {
           const data = res.data
           this.cities = data.cities
           this.hotCities = data.hotCities
         }
-      },
-      handleAlphaChange (alpha) {
-        this.alpha = alpha
-        // console.log(this.alpha+'city')
       }
     },
-    mounted () {
+    mounted() {
       this.getCityInfo()
     }
   }
