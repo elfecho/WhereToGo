@@ -29,9 +29,9 @@
     methods: {
       getCityInfo() {
         axios.get('/api/city.json')
-          .then(this.handleGetCityInfoSucc)
+          .then(this.handleGetCityInfoSuccessfully)
       },
-      handleGetCityInfoSucc(res) {
+      handleGetCityInfoSuccessfully(res) {
         res = res.data
         if (res.ret && res.data) {
           const data = res.data
