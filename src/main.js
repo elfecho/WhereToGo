@@ -6,6 +6,7 @@ import router from './router'
 
 import store from './store'
 
+import 'babel-polyfill'
 // 移动端300ms点击事件延迟解决
 import fastClick from 'fastclick'
 import 'styles/reset.css'
