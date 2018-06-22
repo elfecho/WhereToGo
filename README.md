@@ -5,14 +5,13 @@
 部分功能的项目。
 使用了axios，stylus，vue-router，vuex以及better-scroll，vue-awesome-swiper插件。
 
-## 项目展示
+# 项目展示
 
-``` bash
-# 首页内容展示
+### 首页内容展示
 ![image](/src/assets/showing/home.gif)
 
-# 城市选择页面内容展示
+### 城市选择页面内容展示
 ![image](/src/assets/showing/city.gif)
 
-# 推荐景点详情内容展示
+### 推荐景点详情内容展示
 ![image](/src/assets/showing/detail.gif)
