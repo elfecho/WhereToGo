@@ -9,10 +9,10 @@
 
 ``` bash
 # 首页内容展示
-![image](./src/assets/showing/home.gif)
+![image](https://github.com/keyre/WhereToGo/blob/master/src/assets/showing/home.gif)
 
 # 城市选择页面内容展示
-![image](./src/assets/showing/city.gif)
+![image](https://github.com/keyre/WhereToGo/blob/master/src/assets/showing/city.gif)
 
 # 推荐景点详情内容展示
-![image](./src/assets/showing/detail.gif)
+![image](https://github.com/keyre/WhereToGo/blob/master/src/assets/showing/detail.gif)
