@@ -1,21 +1,18 @@
 # WhereToGo
 
-> A Vue.js project
+> 这是一个基于vue2.0，模仿了
+[去哪儿网](http://touch.piao.qunar.com/touch/index_%E5%8C%97%E4%BA%AC.html)
+部分功能的项目。
+使用了axios，stylus，vue-router，vuex以及better-scroll，vue-awesome-swiper插件。
 
-## Build Setup
+## 项目展示
 
 ``` bash
-# install dependencies
-npm install
+# 首页内容展示
+![image](./src/assets/showing/home.gif)
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 城市选择页面内容展示
+![image](./src/assets/showing/city.gif)
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 推荐景点详情内容展示
+![image](./src/assets/showing/detail.gif)

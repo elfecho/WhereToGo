@@ -72,7 +72,7 @@
       }
     },
     mounted () {
-      this.scroll = new Bscroll(this.$refs.search)
+      this.scroll = new Bscroll(this.$refs.search, {scrollY: true, click: true, tap: true})
     }
   }
 </script>

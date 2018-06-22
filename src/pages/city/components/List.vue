@@ -68,7 +68,7 @@
       ...mapMutations(['changeCity'])
     },
     mounted() {
-      this.scroll = new BScroll(this.$refs.wrapper, {click: true, tap: true})
+      this.scroll = new BScroll(this.$refs.wrapper, {scrollY: true, click: true, tap: true})
     }
   }
 </script>
