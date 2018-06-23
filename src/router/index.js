@@ -25,6 +25,7 @@ export default new Router({
       component: Detail
     }
   ],
+  // 当转到一个新的页面时，定位到最顶端
   scrollBehavior(to, from, savedPosition) {
     return {x: 0, y: 0}
   }
