@@ -21,8 +21,8 @@
       return {
         swiperOption: {
           pagination: '.swiper-pagination',
-          autoplay: true,
-          speed: 2000,
+          autoplay: 3000,
+          speed:2000,
           loop: true
         }
       }
